@@ -27,12 +27,12 @@
       </header>
       <main class="mdl-layout__content">
         <h3>Please enter your employment information:</h3>
-        <!-- Simple Textfield -->
+        <!-- Numeric Textfield -->
         <form action="#">
           <p>Number of hours worked</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number">
-            <label class="mdl-textfield__label" for="street-number">enter here ...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="number-of-hours-worked">
+            <label class="mdl-textfield__label" for="number-of-hours-worked">enter here ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
@@ -40,20 +40,22 @@
         <form action="#">
           <p>Hourly rate</p>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height-of-triangle"/>
-            <label class="mdl-textfield__label" for="height-of-triangle">enter here ...</label>
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="hourly-rate"/>
+            <label class="mdl-textfield__label" for="hourly-rate">enter here ...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-onclick="calculate()">
+onclick="pay()">
           Pay
         </button>
-        <br />
+        <br>
+        <br>
         <p>
           <div id="answers">
-            <div id="pay"></div>
+            <div id="take-home-salary"></div>
+            <div id="government-tax"></div>
           </div>
         </p>
       </main>
